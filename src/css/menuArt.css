@@ -5,6 +5,9 @@
 
 body {
     font-family: 'Futura Display';
+    background-image: url(https://wallpapercave.com/wp/wp5959232.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menuBody {
@@ -12,7 +15,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     background-color: #5f5f5f;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 40;
     

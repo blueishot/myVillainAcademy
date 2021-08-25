@@ -1,0 +1,13 @@
+.mainBody {
+    display: flex;
+    justify-content: center;
+}
+
+.mainTitle {
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 50px;
+    color: #A1CCEE; 
+    user-select: none;
+    font-weight: bold;
+}

@@ -1,5 +1,7 @@
-import menuArt from '../css/menuArt.css'
-import headerLogo from '../Img/header_logo.png'
+import menuArt from '../css/menuArt.css';
+import headerLogo from '../Img/header_logo.png';
+import {Switch, Route, Link} from 'react-router-dom';
+import Main from './Main';
 
 const Menu = () => {
     return (
@@ -10,11 +12,13 @@ const Menu = () => {
                     cursor:'pointer',
                 }}
                 >
-                    <img src={headerLogo}/>
+                    <Link to='/'>
+                        <img src={headerLogo}/>
+                    </Link>
                 </div>
                 <div>
                     <div className='menuButtons'>
-                        <div className='listButton'>
+                        <div className='listButton'>                 
                             <span>
                                 LOV
                             </span>
