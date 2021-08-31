@@ -8,6 +8,8 @@ body {
     background-image: url(https://wallpapercave.com/wp/wp5959232.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
 }
 
 .menuBody {

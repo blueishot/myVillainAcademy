@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import searchArt from '../css/searchArt.css';
 
 
 const Search = () => {
@@ -18,7 +19,7 @@ const Search = () => {
 
     return (
         <div>
-            <input value={inputText} onChange={(e) => setInputText(e.target.value)} />
+            <input className='inputArt' placeholder='Type your villain' value={inputText} onChange={(e) => setInputText(e.target.value)} />
             <div>
                 {villain?.name}
             </div>
@@ -26,7 +27,7 @@ const Search = () => {
                 {villain?.quirk}
             </div>
             <div>
-                <img src={villain?.images?.[1]} />
+                <img src={villain?.images?.[0]} />
             </div>
         </div>
     )
