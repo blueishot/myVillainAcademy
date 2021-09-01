@@ -19,18 +19,38 @@ const Search = () => {
 
     return (
         <div>
-            <input className='inputArt' placeholder='Type your villain' value={inputText} onChange={(e) => setInputText(e.target.value)} />
-            <div>
-                {villain?.name}
-            </div>
-            <div>
-                {villain?.quirk}
-            </div>
-            <div>
-                <img src={villain?.images?.[0]} />
+            <input className='inputArt' placeholder='Type your villain' value={inputText.replace(" ", "_")} onChange={(e) => setInputText(e.target.value)} />
+            <div className='villainCard'>
+                <div className='villainBody'>
+                    <div 
+                    style={{
+                        color:'#922E8E',
+                        fontSize:'30px',
+                        userSelect:'none'
+                    }}>
+                        {villain?.name}
+                    </div>
+                    <div className='villainPicture'>
+                        <img src={villain?.images?.[0]} draggable='false' style={{
+                            maxWidth:'300px'    
+                        }}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
 
 export default Search;
+
+        //     <div>
+        //         {villain?.name}
+        //     </div>
+        //     <div>
+        //         {villain?.quirk}
+        //     </div>
+        //     <div>
+        //         <img src={villain?.images?.[0]} />
+        //     </div>
+        // </div>
